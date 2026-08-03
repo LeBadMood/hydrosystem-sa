@@ -182,6 +182,7 @@ p { margin: 0; }
   height: 84px;
 }
 .logo img { height: 52px; width: auto; }
+.logo .logo-mobile { display: none; }
 
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav > li { position: relative; }
@@ -808,7 +809,8 @@ p { margin: 0; }
   .header__phone { display: none; }
   .header .container { flex-wrap: nowrap; }
   .header nav { order: 3; margin-left: 8px; }
-  .logo img { height: 60px; }
+  .logo .logo-desktop { display: none; }
+  .logo .logo-mobile { display: block; height: 60px; width: auto; }
   .nav-toggle { display: flex; }
   .grid--3, .grid--4, .grid--2 { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr; }
