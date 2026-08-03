@@ -554,12 +554,26 @@ p { margin: 0; }
 .partner-featured > * { position: relative; z-index: 1; }
 .partner-featured .eyebrow { color: #FF8A78; }
 .partner-featured .eyebrow::before { background: #FF8A78; }
-.partner-featured__badge { display: inline-flex; align-items: center; justify-content: center; margin-bottom: 18px; height: 84px; width: 180px; }
-.partner-featured__badge img { display: block; max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; }
+.partner-featured__badge { display: flex; align-items: center; justify-content: flex-start; margin-bottom: 20px; height: 116px; }
+.partner-featured__badge img { display: block; width: auto; }
+.partner-featured__badge img[src*="rexroth"] { height: 116px; }
+.partner-featured__badge img[src*="smc"] { height: 62px; }
 
-.official-badges-row { display: flex; justify-content: center; align-items: center; gap: 48px; flex-wrap: wrap; margin-top: 40px; }
-.official-badges-row .badge-box { display: flex; align-items: center; justify-content: center; height: 110px; width: 230px; }
-.official-badges-row img { max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; }
+.official-badges-row { display: flex; justify-content: center; align-items: center; gap: 56px; flex-wrap: wrap; margin-top: 40px; }
+.official-badges-row .badge-box { display: flex; align-items: center; justify-content: center; height: 130px; }
+.official-badges-row img { display: block; width: auto; }
+.official-badges-row img[src*="rexroth"] { height: 130px; }
+.official-badges-row img[src*="smc"] { height: 70px; }
+
+@media (max-width: 760px) {
+  .partner-featured__badge { height: 92px; }
+  .partner-featured__badge img[src*="rexroth"] { height: 92px; }
+  .partner-featured__badge img[src*="smc"] { height: 50px; }
+  .official-badges-row { gap: 32px; }
+  .official-badges-row .badge-box { height: 100px; }
+  .official-badges-row img[src*="rexroth"] { height: 100px; }
+  .official-badges-row img[src*="smc"] { height: 54px; }
+}
 .partner-featured h3 { font-size: 24px; color: var(--white); margin-bottom: 10px; }
 .partner-featured p { color: var(--gray-300); font-size: 15px; }
 
