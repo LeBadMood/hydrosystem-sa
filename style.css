@@ -784,7 +784,7 @@ p { margin: 0; }
   height: auto;
   object-fit: contain;
   filter: grayscale(100%);
-  opacity: .68;
+  opacity: .82;
   transition: filter .25s, opacity .25s;
 }
 .brand-logo:hover img { filter: grayscale(0); opacity: 1; }
