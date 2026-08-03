@@ -554,6 +554,8 @@ p { margin: 0; }
 .partner-featured > * { position: relative; z-index: 1; }
 .partner-featured .eyebrow { color: #FF8A78; }
 .partner-featured .eyebrow::before { background: #FF8A78; }
+.partner-featured__badge { background: var(--white); border-radius: 8px; padding: 12px 16px; display: inline-flex; margin-bottom: 18px; }
+.partner-featured__badge img { display: block; height: 48px; width: auto; }
 .partner-featured h3 { font-size: 24px; color: var(--white); margin-bottom: 10px; }
 .partner-featured p { color: var(--gray-300); font-size: 15px; }
 
