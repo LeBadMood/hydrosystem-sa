@@ -307,7 +307,7 @@ p { margin: 0; }
   background-image: url('schema-hydraulique.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 165%;
   opacity: 0.17;
   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.28), rgba(0,0,0,0.5) 38%, rgba(0,0,0,1) 72%);
   mask-image: linear-gradient(to right, rgba(0,0,0,0.28), rgba(0,0,0,0.5) 38%, rgba(0,0,0,1) 72%);
