@@ -317,11 +317,14 @@ p { margin: 0; }
 @media (max-width: 900px) {
   .hero::after, .pagehead::after {
     opacity: 0.13;
-    background-size: 165% auto;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 72%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 72%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, rgba(0,0,0,0.35) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, rgba(0,0,0,0.35) 100%);
+  }
+  .hero::after {
+    background-image: url('schema-hydraulique-vertical.png');
+    background-size: 100% 100%;
   }
   .pagehead::after { background-size: 190% auto; }
 }
@@ -911,10 +914,10 @@ p { margin: 0; }
   .nav > li:hover .dropdown { display: none; }
   .nav > li.is-open .dropdown { display: block; }
   .header__phone { display: none; }
-  .header .container { flex-wrap: nowrap; }
+  .header .container { flex-wrap: nowrap; height: 98px; }
   .header nav { order: 3; margin-left: 8px; }
   .logo .logo-desktop { display: none; }
-  .logo .logo-mobile { display: block; height: 60px; width: auto; }
+  .logo .logo-mobile { display: block; height: 78px; width: auto; }
   .nav-toggle { display: flex; }
   .grid--3, .grid--4, .grid--2 { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr; }
